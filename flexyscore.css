@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+:root {
+--linkcasa: url("https://i.imgur.com/ekdaQQI.png");
+--linkfuori: url("https://i.imgur.com/2h1Z4G0.png");
+}
+
+/*mette tutto in maiuscolo*/
+.boxhometeam {
+  background: rgba(0,69,187,255);
+  color: white;
+}
+.boxawayteam {
+  background: rgba(255,255,255,255);
+  color: rgba(0,69,187,255);
+}
+/*this change the background color and font color of SET column*/
+.labelsets, .boxhomesets, .boxawaysets {
+  background: rgba(255,20,134,255);
+  color: white;
+}
+/*this change the background color and font color of POINT column*/
+.labelpoints, .boxpoints {
+  background: rgba(130,130,130,255);
+  color: white;
+}
+.box, div {display:flex; align-items:center; height:95%}
+.container {float:left; font-family: 'Roboto Mono', monospace; justify-content:center;}
+.sgrlogo, .boxservice {
+  display:none;
+}
+
+/*---- VOLLEY --------*/
+
+
+.containervolley {
+  display: grid;
+  grid-template: 55px 201px 201px / auto auto 175px 460px 230px;
+  font-size: 7vw;
+  gap: 0 12px; 
+  margin: 10px 10px;
+}
+
+
+.boxhometeam, .boxawayteam {position: relative; justify-content: flex-end; padding: 0 3vw}
+
+/*  MassaVolley Styles */
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkcasa) no-repeat left;background-size:90%;}
+
+/*  Away Team Styles */
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkfuori) no-repeat left;background-size:90%;}
+
+
+/*this change the position home e away team */
+.boxhometeam, .boxawayteam { 
+  grid-column: 4/5;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+/*this swap the position of Points and Set*/
+.boxhomesets{
+  justify-content: center; 
+  padding: 0 2vw; 
+  text-align:center;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+ .boxawaysets {
+  justify-content: center; 
+  padding: 0 2vw; 
+  text-align:center;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.boxhomepoints, .boxawaypoints {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5/6;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.labelsets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+.labelpoints {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5/6;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+/*angoli arrotondati*/
+.boxhomepoints {
+  border-top-right-radius: 2vw;
+}
+.boxawaypoints {
+  border-bottom-right-radius: 2vw;
+}
+.boxhomesets {
+  border-top-left-radius: 2vw;
+}
+.boxawaysets {
+  border-bottom-left-radius: 2vw;
+}
+.labelsets {
+  border-bottom-left-radius: 2vw;
+  border-top-left-radius: 1vw;
+  border-bottom-right-radius: 2vw;
+  border-top-right-radius: 1vw;
+}
+.labelpoints {
+  border-bottom-left-radius: 2vw;
+  border-top-left-radius: 1vw;
+  border-bottom-right-radius: 2vw;
+  border-top-right-radius: 1vw;
+}
+
