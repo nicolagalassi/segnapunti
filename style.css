@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 :root {
 --linkmassa: url("https://i.ibb.co/mTdNXNd/logo21.png");
---linkaltra: url("https://i.ibb.co/VM3dxWF/involley.png");
+--linkaltra: url("https://i.ibb.co/3dd2R29/budrio.png");
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -17,9 +17,9 @@
 .containervolley {width: auto; float: left; grid-template-columns: auto auto 15vw 40vw 18vw; font-size: 12vw; gap: 1vw}
 .boxhometeam, .boxawayteam {position: relative; justify-content: flex-end; padding: 0 3vw}
 /* Home Logo */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkaltra) no-repeat left;background-size:90%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkaltra) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
