@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+:root {
+--linkmassa: url("https://i.ibb.co/mTdNXNd/logo21.png");
+--linkaltra: url("https://i.ibb.co/VM3dxWF/involley.png");
+}
+
+.box, .space, .label, .div {display:flex; justify-content:center; align-items:center;}
+.container {display:grid; float:left; font-family: 'Roboto Mono', monospace; justify-content:center;}
+.boxhometeam {background: rgba(35,3,255,255);color: white;}
+.boxawayteam {background: rgba(255,255,255,255);color: rgba(35,3,255,255);}
+.labelsets, .boxhomesets, .boxawaysets {background: rgba(255,20,134,255);color: white;}
+.labelpoints, .boxpoints {background: rgba(130,130,130,255);color: white;}
+.sgrlogo, .boxservice, .labelsets, .labelpoints {display:none;}
+/* ELEMENT POSITIONING */
+.containervolley {
+  width: auto;
+  grid-template-columns: 8vw 27vw 11vw 2vw 11vw 27vw 8vw;
+  grid-template-rows: auto 10vw;
+  gap: 0.5vw;
+  font-size: 7vw;
+  margin: 10px 10px;
+}
+
+/*  MassaVolley Styles */
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkaltra) no-repeat left;background-size:80%;}
+/*  Away Team Styles */
+.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
+
+
+/*this change the position home e away team */
+.boxhometeam { grid-row: 2/3;grid-column: 2/3;}
+.boxawayteam { grid-row: 2/3;grid-column: 6/7;}
+.boxhomesets {grid-row: 2/3;grid-column: 1/2;font-size: 7vw;padding: 0 2vw; }
+.boxawaysets {grid-row: 2/3;grid-column: 7/8;font-size: 7vw;padding: 0 2vw; }
+.boxhomepoints {grid-row: 2/3;grid-column: 3/4;}
+.boxawaypoints {grid-row: 2/3;grid-column: 5/6;}
+
+/*angoli arrotondati*/
+.boxhomesets {border-bottom-left-radius: 1vw;border-top-left-radius: 1vw;}
+.boxawaysets {border-bottom-right-radius: 1vw;border-top-right-radius: 1vw;}
+.boxhomepoints {border-bottom-right-radius: 1vw;border-top-right-radius: 1vw;}
+.boxawaypoints {border-bottom-left-radius: 1vw;border-top-left-radius: 1vw;}
