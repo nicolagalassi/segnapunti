@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 :root {
 --linkmassa: url("https://i.ibb.co/mTdNXNd/logo21.png");
---linkaltra: url("https://i.ibb.co/VM3dxWF/involley.png");
+--linkaltra: url("https://i.ibb.co/3dd2R29/budrio.png");
 }
 
 .box, .space, .label, .div {display:flex; justify-content:center; align-items:center;}
@@ -22,9 +22,9 @@
 }
 
 /*  MassaVolley Styles */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkaltra) no-repeat left;background-size:80%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
 /*  Away Team Styles */
-.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
+.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkaltra) no-repeat left;background-size:80%;}
 
 
 /*this change the position home e away team */
