@@ -3,6 +3,7 @@
 --linkmassa: url("https://i.ibb.co/mTdNXNd/logo21.png");
 --linkaltra: url("https://i.ibb.co/3dd2R29/budrio.png");
 --linkbudrio: url("https://i.ibb.co/3dd2R29/budrio.png");
+--linkeurotec: url("https://i.ibb.co/QJyksts/progresso.png");
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -20,7 +21,7 @@
 /* Home Logo */
 .boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkbudrio) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkeurotec) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
