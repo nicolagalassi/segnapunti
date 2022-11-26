@@ -5,6 +5,7 @@
 --linkbudrio: url("https://i.ibb.co/3dd2R29/budrio.png");
 --linkeurotec: url("https://i.ibb.co/QJyksts/progresso.png");
 --linkelenos: url("https://i.ibb.co/TBX34LY/elenos.png");
+--linkanzola: url("https://i.ibb.co/6mcWsr7/anzola.png");  
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -22,7 +23,7 @@
 /* Home Logo */
 .boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkelenos) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkanzola) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
