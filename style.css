@@ -6,7 +6,7 @@
 --linkeurotec: url("https://i.ibb.co/QJyksts/progresso.png");
 --linkelenos: url("https://i.ibb.co/TBX34LY/elenos.png");
 --linkanzola: url("https://i.ibb.co/6mcWsr7/anzola.png"); 
---linkmasi: url("https://i.ibb.co/0m8x7WN/polmasi.png); 
+--linkmasi: url("https://i.ibb.co/0m8x7WN/polmasi.png"); 
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
