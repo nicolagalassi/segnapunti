@@ -6,6 +6,7 @@
 --linkeurotec: url("https://i.ibb.co/QJyksts/progresso.png");
 --linkelenos: url("https://i.ibb.co/TBX34LY/elenos.png");
 --linkanzola: url("https://i.ibb.co/6mcWsr7/anzola.png"); 
+--linkmasi: url("https://i.ibb.co/0m8x7WN/polmasi.png"); 
 
 }
 
@@ -29,7 +30,7 @@
 /*  MassaVolley Styles */
 .boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
 /*  Away Team Styles */
-.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkanzola) no-repeat left;background-size:80%;}
+.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkmasi) no-repeat left;background-size:80%;}
 
 
 /*this change the position home e away team */
