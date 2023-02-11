@@ -7,6 +7,7 @@
 --linkanzola: url("https://i.ibb.co/6mcWsr7/anzola.png"); 
 --linkmasi: url("https://i.ibb.co/0m8x7WN/polmasi.png"); 
 --linklugo: url("https://i.ibb.co/VM3dxWF/involley.png");  
+--linkpontevecchio: url("https://i.ibb.co/qn9H4hd/pontevecchio.png"); 
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -24,7 +25,7 @@
 /* Home Logo */
 .boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linklugo) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkpontevecchio) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
