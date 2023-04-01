@@ -9,7 +9,7 @@
 --linklugo: url("https://i.ibb.co/VM3dxWF/involley.png");  
 --linkpontevecchio: url("https://i.ibb.co/qn9H4hd/pontevecchio.png"); 
 --linkdmgroup: url("https://i.ibb.co/J21GFxT/vtb.png");   
-
+--linkargelato: url("https://i.ibb.co/LJ4LhcH/argelato.png"); 
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -25,9 +25,9 @@
 .containervolley {width: auto; float: left; grid-template-columns: auto auto 15vw 40vw 18vw; font-size: 12vw; gap: 1vw}
 .boxhometeam, .boxawayteam {position: relative; justify-content: flex-end; padding: 0 3vw}
 /* Home Logo */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmasi) no-repeat left;background-size:90%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkargelato) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
