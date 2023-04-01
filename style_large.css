@@ -9,6 +9,7 @@
 --linklugo: url("https://i.ibb.co/VM3dxWF/involley.png"); 
 --linkpontevecchio: url("https://i.ibb.co/qn9H4hd/pontevecchio.png"); 
 --linkdmgroup: url("https://i.ibb.co/J21GFxT/vtb.png");   
+--linkargelato: url("https://i.ibb.co/LJ4LhcH/argelato.png");  
 }
 
 .box, .space, .label, .div {display:flex; justify-content:center; align-items:center;}
@@ -29,9 +30,9 @@
 }
 
 /*  MassaVolley Styles */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmasi) no-repeat left;background-size:80%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
 /*  Away Team Styles */
-.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
+.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkargelato) no-repeat left;background-size:80%;}
 
 
 /*this change the position home e away team */
