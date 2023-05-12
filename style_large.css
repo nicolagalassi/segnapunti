@@ -11,6 +11,7 @@
 --linkdmgroup: url("https://i.ibb.co/J21GFxT/vtb.png");   
 --linkargelato: url("https://i.ibb.co/LJ4LhcH/argelato.png");  
 --linkcervia: url("https://i.ibb.co/K6b4LyD/logo.png"); 
+--linkparma: url("https://i.ibb.co/RBy5yZx/download-1.jpg");
 }
 
 .box, .space, .label, .div {display:flex; justify-content:center; align-items:center;}
@@ -31,9 +32,9 @@
 }
 
 /*  MassaVolley Styles */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkparma) no-repeat left;background-size:80%;}
 /*  Away Team Styles */
-.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkcervia) no-repeat left;background-size:80%;}
+.boxawayteam:after {content:""; position:relative; top:0; left:2vw; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:80%;}
 
 
 /*this change the position home e away team */
