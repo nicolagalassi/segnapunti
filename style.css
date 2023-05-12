@@ -11,6 +11,7 @@
 --linkdmgroup: url("https://i.ibb.co/J21GFxT/vtb.png");   
 --linkargelato: url("https://i.ibb.co/LJ4LhcH/argelato.png"); 
 --linkcervia: url("https://i.ibb.co/K6b4LyD/logo.png"); 
+--linkparma: url("https://i.ibb.co/RBy5yZx/download-1.jpg");
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -26,9 +27,9 @@
 .containervolley {width: auto; float: left; grid-template-columns: auto auto 15vw 40vw 18vw; font-size: 12vw; gap: 1vw}
 .boxhometeam, .boxawayteam {position: relative; justify-content: flex-end; padding: 0 3vw}
 /* Home Logo */
-.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
+.boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkparma) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkcervia) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
