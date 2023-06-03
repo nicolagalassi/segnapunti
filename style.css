@@ -12,6 +12,7 @@
 --linkargelato: url("https://i.ibb.co/LJ4LhcH/argelato.png"); 
 --linkcervia: url("https://i.ibb.co/K6b4LyD/logo.png"); 
 --linkparma: url("https://i.ibb.co/pyd77q8/parma.png");
+--linkrimini: url("https://i.ibb.co/KVymLqd/rimini.png");
 }
 
 .box, .space, .label {display:flex; justify-content:center; align-items:center;}
@@ -29,7 +30,7 @@
 /* Home Logo */
 .boxhometeam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkmassa) no-repeat left;background-size:90%;}
 /*  Away Logo */
-.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkparma) no-repeat left;background-size:90%;}
+.boxawayteam:before {content:""; position:relative; top:0; left:0; width:40%; height:100%; background:var(--linkrimini) no-repeat left;background-size:90%;}
 
 
 /* posizionamento tabella */
