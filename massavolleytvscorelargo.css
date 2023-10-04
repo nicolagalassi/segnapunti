@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+/*----- Classi comuni ----*/
+:root {
+  --skew: 0deg;
+  --antiskew: -10deg;
+  --text: black;
+  --textinverted: #eee;
+  --bordercolors: #333;
+  --bkgimage: url(https://res.cloudinary.com/nicolagalassi/image/upload/MassaVolley/sponsor.jpg) no-repeat;
+  --bkgdark: #eee;
+  --bkgmedium: black;
+  --bkgpoints: rgba(46,49,146,255);
+  --bkgset: rgba(41,171,226,255);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bkgimage);
+}
+em {
+  font-style: normal;
+}
+.box,
+div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.container {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  clear: both;
+  width: auto;
+  display: grid;
+  color: var(--text);
+  padding: 125px 35px;
+  font-family: 'Roboto Mono', monospace;
+  transform: skew(var(--skew));
+}
+
+.boxpoints {
+  padding: var(--pointspadding);
+  float: left;
+  background: black;
+  font-weight: bold;
+}
+
+
+/*---- TENNIS --------*/
+.containertennis {
+  grid-template: 0 75px 75px / 170px 0 0 110px 100px 100px 100px 100px 100px;
+  gap: 5px;
+  font-size: 65px;
+}
+.containertennis .box {
+  justify-content: center;
+}
+.containertennis .boxteams {
+  justify-content: center;
+}
+
+.containertennis .boxgames {
+  color: white;
+  margin-right: 10px;
+}
+
+.containertennis .boxset {
+  color: white;
+}
+/* posizioni */
+
+.containertennis .boxhometeam {
+  background: blue;
+  color: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.containertennis .boxawayteam {
+  background: white;
+  color: blue;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.containertennis .boxhomegames {
+  background: var(--bkgset);
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.containertennis .boxawaygames {
+  background: var(--bkgset);
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+/* posizioni set */
+.containertennis #set_1_points_1 {
+  background: var(--bkgpoints);
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+.containertennis #set_1_points_2 {
+  background: var(--bkgpoints);
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+.containertennis #set_2_points_1 {
+  background: var(--bkgpoints);
+  grid-column: 6/7;
+  grid-row: 2/3;
+}
+.containertennis #set_2_points_2 {
+  background: var(--bkgpoints);
+  grid-column: 6/7;
+  grid-row: 3/4;
+}
+.containertennis #set_3_points_1 {
+  background: var(--bkgpoints);
+  grid-column: 7/8;
+  grid-row: 2/3;
+}
+.containertennis #set_3_points_2 {
+  background: var(--bkgpoints);
+  grid-column: 7/8;
+  grid-row: 3/4;
+}
+.containertennis #set_4_points_1 {
+  background: var(--bkgpoints);
+  grid-column: 8/9;
+  grid-row: 2/3;
+}
+.containertennis #set_4_points_2 {
+  background: var(--bkgpoints);
+  grid-column: 8/9;
+  grid-row: 3/4;
+}
+.containertennis #set_5_points_1 {
+  background: var(--bkgpoints);
+  grid-column: 9/10;
+  grid-row: 2/3;
+}
+.containertennis #set_5_points_2 {
+  background: var(--bkgpoints);
+  grid-column: 9/10;
+  grid-row: 3/4;
+}
+
+
+
+.containertennis .boxoff, 
+.containertennis .labelgames,
+.containertennis .sgrlogo,
+.containertennis .boxawayservice,
+.containertennis .boxhomeservice,
+.containertennis .boxpoints, 
+.containertennis .labelpoints,
+.containertennis .boxservice {
+  display: none;
+}
