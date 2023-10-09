@@ -1,113 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
 /*----- Classi comuni ----*/
 :root {
-  --text: #fff;
-  --textinverted: rgba(111, 1, 0, 0.8);
-  --bordercolors: #3f464e;
-  --linee: #3f464e;
-  --bkgimage: blue;
-  --bkgdark: red;
-  --bkgmedium: rgba(111, 1, 0, 0.6);
-  --signalcolor: gold;
-  --signaloff: #a90000;
-  --bkgpoints: rgba(46, 49, 146, 255);
-  --bkgsets: rgba(41, 171, 226, 255);
+--text: #fff;
+--textinverted: rgba(111,1,0,.8); 
+--bordercolors: #3F464E;
+--linee: #3F464E; 
+--bkgimage: blue;
+--bkgdark: red;
+--bkgmedium: rgba(111,1,0,.6);
+--signalcolor: gold;
+--signaloff: #A90000;
+--bkgpoints: rgba(46,49,146,255);
+--bkgsets: rgba(41,171,226,255);
+
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-em {
-  font-style: normal;
-}
-.box,
-div {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.container {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  float: left;
-  clear: both;
-  width: auto;
-  display: grid;
-  column-gap: 0.1em;
-  color: var(--text);
-  padding: 0.1em;
-  font-family: "Roboto Mono", monospace;
-}
+html, body {margin:0; padding:0;}
+em {font-style:normal;}
+.box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
+.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 0.1em; color:var(--text); padding:.1em; font-family: 'Roboto Mono', monospace;}
 
-.boxpoints {
-  padding: var(--pointspadding);
-  float: left;
-}
+.boxpoints {padding:var(--pointspadding); float:left; }
 
-.boxteams {
-  color: white;
-}
-.boxsets {
-  background: var(--bkgsets);
-  color: white;
-}
-.boxpoints {
-  background: var(--bkgpoints);
-  color: white;
-}
+.boxteams {color: white;}
+.boxsets {background: var(--bkgsets);color: white;}
+.boxpoints {background: var(--bkgpoints);color: white;}
+
+
 
 /*---- VOLLEY --------*/
-.containervolley {
-  grid-template: 60px / 65px 120px 65px 65px 120px 65px;
-  font-size: 50px;
-}
-.containervolley .box {
-  justify-content: center;
-}
-.containervolley .boxteams {
-  justify-content: center;
-}
+.containervolley {grid-template: 120px / 130px 240px 130px 130px 240px 130px; font-size: 90px;}
+.containervolley .box {justify-content:center;}
+.containervolley .boxteams {justify-content:center;}
 
-.sgrlogo,
-.boxservice,
-.labelsets,
-.labelpoints {
-  display: none;
-}
+.sgrlogo, .boxservice, .labelsets, .labelpoints {display:none;}
 
-.containervolley .boxhomesets {
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-.containervolley .boxhometeam {
-  background: rgba(35, 3, 255, 255);
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-.containervolley .boxhomepoints {
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-.containervolley .boxawaypoints {
-  grid-row: 1/2;
-  grid-column: 4/5;
-}
-.containervolley .boxawayteam {
-  background: white;
-  color: blue;
-  grid-row: 1/2;
-  grid-column: 5/6;
-}
-.containervolley .boxawaysets {
-  grid-row: 1/2;
-  grid-column: 6/7;
-}
+.containervolley .boxhomesets {grid-row: 1/2;grid-column: 1/2;}
+.containervolley .boxhometeam {background: rgba(35,3,255,255);grid-row: 1/2;grid-column: 2/3;}
+.containervolley .boxhomepoints {grid-row: 1/2;grid-column: 3/4;}
+.containervolley .boxawaypoints {grid-row: 1/2;grid-column: 4/5;}
+.containervolley .boxawayteam {background: white;color: blue;grid-row: 1/2;grid-column: 5/6;}
+.containervolley .boxawaysets {grid-row: 1/2;grid-column: 6/7;}
 
-.containervolley .boxsets {
-  font-size: 1em;
-}
+.containervolley .boxsets {font-size:1.1em; }
