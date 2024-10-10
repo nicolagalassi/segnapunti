@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+/*----- Variabili Colori Utilizzate ----*/
+:root {
+  --text: #fff;
+  --bkgpoints: #f0047f; /* Colore per i box points */
+  --bkgsets: #110b79;   /* Colore per i box sets */
+  --bkgteams: #2303ff;  /* Colore unificato per i box teams */
+  --containerbackground: #fff; /* Sfondo bianco per il container */
+  --tableborder: white;
+}
+
+
+
+.box, div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  clear: both;
+  width: auto;
+  display: grid;
+  color: var(--text);
+  font-family: "Reddit Mono", monospace;
+  
+}
+
+.boxpoints {
+  background: var(--bkgpoints); /* Colore aggiornato per i box points */
+  color: var(--text); /* Testo bianco nei box points */
+}
+
+.boxteams {
+  background: var(--bkgteams); /* Colore unificato per i box teams */
+  color: var(--text); /* Testo bianco nei box teams */
+}
+
+.boxsets {
+  background: var(--bkgsets); /* Colore aggiornato per i box sets */
+}
+
+/*---- VOLLEY --------*/
+.containervolley {
+  grid-template: 120px 50px / 100px 220px 120px 130px 120px 220px 100px; /* Colonna extra da 130px */
+  font-size: 65px;
+}
+
+.containervolley .box, .label {
+  justify-content: center;
+  border: 10px solid var(--tableborder); /* Applica il bordo esterno */
+}
+
+.labelpoints, .sgrlogo {
+  display: none;
+}
+
+.containervolley .boxhomesets {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  border-right: 0px;
+}
+
+.containervolley .boxhometeam {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  border-right: 0px;
+}
+
+.containervolley .boxhomepoints {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  border-right: 0px;
+}
+
+/* Logo nella boxmiddle */
+.containervolley .labelsets {
+  background-color: #2E3192; /* Colore di sfondo dei sets */
+  grid-row: 1/2;
+  grid-column: 4/5;
+  /* Immagine di sfondo */
+  background-image: url('https://res.cloudinary.com/nicolagalassi/image/upload/f_auto,q_auto/v1/MassaVolley/logoserieb');
+  background-size: 95px; /* Assicura che l'immagine si adatti al box senza distorsioni */
+  background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+  background-position: center; /* Centra l'immagine all'interno del box */
+  width: 100%; /* Assicura che il box occupi l'intera larghezza della colonna */
+  height: 100%; /* Assicura che il box occupi l'intera altezza della riga */
+  
+  color: transparent; /* Nasconde il testo */
+}
+
+.containervolley .boxservice::after {
+  content: "SERIE B2 Femminile - Girone F"; /* Il contenuto che vuoi sostituire */
+  display: block; 
+}
+
+
+.containervolley .boxservice {
+  grid-row: 2/3;
+  grid-column: 3/6;
+  justify-content: center;
+  font-size: 18px;
+  border-top: 0px;
+}
+
+.containervolley .boxawaypoints {
+  grid-row: 1/2;
+  grid-column: 5/6;
+  border-left: 0px;
+}
+
+.containervolley .boxawayteam {
+  grid-row: 1/2;
+  grid-column: 6/7;
+  border-left: 0px;
+}
+
+.containervolley .boxawaysets {
+  grid-row: 1/2;
+  grid-column: 7/8;
+  border-left: 0px;
+}
+
+.containervolley .boxsets {
+  font-size: 80px;
+}
+
