@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+/*----- Classi comuni ----*/
+:root {
+  --text: black;
+  --bkgimage: url(https://res.cloudinary.com/nicolagalassi/image/upload/v1696240865/MassaVolley/sponsor.png) no-repeat;
+  --bkgpoints: #110b79; /* Colore per i box points */
+  --bkgsets: #f0047f;   /* Colore per i box sets */
+ --bkgteams: #2303ff;  /* Colore unificato per i box teams */
+  --tableborder: white; /* Colore del contorno semi-trasparente */
+}
+
+em {
+  font-style: normal;
+}
+
+.box, div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  color: var(--text);
+  font-family: 'Reddit Mono', monospace;
+}
+
+
+/*---- TENNIS --------*/
+.containertennis {
+  grid-template: 0 75px 75px / 150px 0 0 90px 100px 100px 100px 100px 100px;
+  font-size: 50px;
+}
+
+.containertennis .box, .containertennis .boxteams {
+  justify-content: center;
+  background: var(--bkgteams);
+  color: white;
+  border: 5px solid var(--tableborder); /* Spessore e colore del bordo */
+}
+
+/* Box per la squadra di casa */
+.containertennis .boxhometeam {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.containertennis .boxawayteam {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+/* Box home e away games */
+.containertennis .boxhomegames {
+  background: var(--bkgsets);
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.containertennis .boxawaygames {
+  background: var(--bkgsets);
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+/* Punteggi dei set */
+.containertennis #set_1_points_1,
+.containertennis #set_2_points_1,
+.containertennis #set_3_points_1,
+.containertennis #set_4_points_1,
+.containertennis #set_5_points_1 {
+  background: var(--bkgpoints);
+  grid-row: 2/3;
+}
+
+.containertennis #set_1_points_2,
+.containertennis #set_2_points_2,
+.containertennis #set_3_points_2,
+.containertennis #set_4_points_2,
+.containertennis #set_5_points_2 {
+  background: var(--bkgpoints);
+  grid-row: 3/4;
+}
+
+/* Colonne per i set */
+.containertennis #set_1_points_1, .containertennis #set_1_points_2 { grid-column: 5/6; }
+.containertennis #set_2_points_1, .containertennis #set_2_points_2 { grid-column: 6/7; }
+.containertennis #set_3_points_1, .containertennis #set_3_points_2 { grid-column: 7/8; }
+.containertennis #set_4_points_1, .containertennis #set_4_points_2 { grid-column: 8/9; }
+.containertennis #set_5_points_1, .containertennis #set_5_points_2 { grid-column: 9/10; }
+
+/* Elementi nascosti */
+.containertennis .boxoff, 
+.containertennis .labelgames,
+.containertennis .sgrlogo,
+.containertennis .boxawayservice,
+.containertennis .boxhomeservice,
+.containertennis .boxpoints, 
+.containertennis .labelpoints,
+.containertennis .boxservice {
+  display: none;
+}
